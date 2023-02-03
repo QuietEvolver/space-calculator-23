@@ -30,6 +30,11 @@ describe('Calculator', () => {
   
     test('Should test Mars age given an inputted age', () => {
       const calculator =  new Calculator(4);
-      expect(calculator.marsAge()).toEqual(2.48);
+      expect(calculator.marsAge()).toEqual(7.52);
+    });
+
+    test('Should test Jupiter age given an inputted age', () => {
+      const calculator =  new Calculator(4);
+      expect(calculator.jupiterAge()).toEqual(47.44);
     });
 });
