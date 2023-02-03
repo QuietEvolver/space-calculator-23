@@ -64,7 +64,8 @@ export default class Calculator{
 
   //     ["Mars", 1.88]
   marsAge(){
-  
+    const birthdayAge = this.birthdayAge;
+    return birthdayAge * 1.88;
   }
 }
 

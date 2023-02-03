@@ -24,8 +24,12 @@ describe('Calculator', () => {
     });
   
     test('Should test Venus age given an inputted age', () => {
-      const calculator =  new Calculator(2);
-      expect(calculator.venusAge()).toEqual(3.22);
+      const calculator =  new Calculator(4);
+      expect(calculator.venusAge()).toEqual(2.48);
     });
   
+    test('Should test Mars age given an inputted age', () => {
+      const calculator =  new Calculator(4);
+      expect(calculator.marsAge()).toEqual(2.48);
+    });
 });
