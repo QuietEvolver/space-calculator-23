@@ -58,7 +58,8 @@ export default class Calculator{
 
   //     ["Venus", .62]
   venusAge(){
-    
+    const birthdayAge = this.birthdayAge;
+    return birthdayAge * .62;
   }
 }
 
