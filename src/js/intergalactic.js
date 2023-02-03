@@ -40,13 +40,19 @@ export default class Calculator{
   }
 
   givenAgeValidation(){// if (this.birthdayAge === 0)
-    if(this.birthdayAge === undefined) {
-      this.birthdayAge = 0;//this.birthdayAge
-    // } else if (isNaN(this.birthdayAge))
+    if(this.birthdayAge !== 0) {
+      this.birthdayAge;//this.birthdayAge
+    } else return 0;
+    // if (isNaN(this.birthdayAge))
     // {
     //   this.birthdayAge = NaN;
     //   return this.birthdayAge;
     // }
+  }
+
+  //     ["Mercury", .24]
+  mercuryAge(){
+
   }
 }
 
