@@ -31,7 +31,7 @@ export default class Calculator{
     // if (this.birthdayAge === undefined){
     //   this.birthdayAge = 0;//this.birthdayAge
     if(this.birthdayAge !== 0){
-        this.birthdayAge;//this.birthdayAge
+        return this.birthdayAge;//this.birthdayAge
   //   } else return 0;
   //   // if (isNaN(this.birthdayAge))
   //   // {
