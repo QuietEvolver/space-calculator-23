@@ -14,7 +14,7 @@ describe('Calculator', () => {
 
   //if undef
   test('Should test validation of an age given an inputted age', () => {
-    const calculator =  new Calculator(undefined);
+    const calculator =  new Calculator(0);
     expect(calculator.birthdayAge).toEqual(0);
   });
   
