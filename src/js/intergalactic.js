@@ -7,20 +7,6 @@ Returns their age in Venus years. (A Venus year is .62 Earth years.)
 Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
 Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
 
-// for each planet in plantes, do this. 
-// Map.
-
-// let iCalculator = new Map(
-//   [
-//     ["Mercury", .24],
-//     ["Venus", .62],
-//     ["Mars", 1.88], 
-//     ["Jupiter", 11.86]
-//   ]
-// )
-
-// iCalculator.entries()
-
 ### 2 ##### Determines how many years have passed on each planet since a past birthday. For example, if a user is 56 and we want to calculate how many years have passed since their 43 birthday, we would find the following results:
 13 Earth years have passed.
 54.16 Mercury years have passed.
@@ -82,6 +68,7 @@ export default class Calculator{
 
 
   getYearsSinceBirthdayAge(planetName){
+    let birthdayAge = this.birthdayAge;
     const iCalculator = new Map(
     [
       ["Earth", 1],
@@ -91,7 +78,9 @@ export default class Calculator{
       ["Jupiter", 11.86]
     ]
   );
- return Number(this.birthdayAge - iCalculator.entries(planetName));
+  if(birthdayAge > 0){
+    return Number(birthdayAge - iCalculator.entries(planetName));
+  }
   // iCalculator.entries()
   }
 }
