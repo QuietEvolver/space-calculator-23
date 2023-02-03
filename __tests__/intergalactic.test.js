@@ -37,4 +37,9 @@ describe('Calculator', () => {
       const calculator =  new Calculator(4);
       expect(calculator.jupiterAge()).toEqual(47.44);
     });
+
+    test('Should test one age to the next age given an inputted age', () => {
+      const calculator =  new Calculator(56);
+      expect(calculator.getYearsSinceBirthdayAge()).toEqual(43);
+    });
 });
