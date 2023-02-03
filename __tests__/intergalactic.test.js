@@ -20,7 +20,7 @@ describe('Calculator', () => {
 
     test('Should test Mercury age given an inputted age', () => {
       const calculator =  new Calculator(4);
-      expect(calculator.mercuryAge()).toEqual(1);
+      expect(calculator.mercuryAge()).toEqual(0.96);
     });
   
   
