@@ -39,20 +39,26 @@ export default class Calculator{
     this.birthdayAge = birthdayAge;
   }
 
-  givenAgeValidation(){// if (this.birthdayAge === 0)
-    if(this.birthdayAge !== 0) {
-      this.birthdayAge;//this.birthdayAge
-    } else return 0;
-    // if (isNaN(this.birthdayAge))
-    // {
-    //   this.birthdayAge = NaN;
-    //   return this.birthdayAge;
-    // }
-  }
+  // givenAgeValidation(){// if (this.birthdayAge === 0)
+  //   if(this.birthdayAge !== 0) {
+  //     this.birthdayAge;//this.birthdayAge
+  //   } else return 0;
+  //   // if (isNaN(this.birthdayAge))
+  //   // {
+  //   //   this.birthdayAge = NaN;
+  //   //   return this.birthdayAge;
+  //   // }
+  // }
 
   //     ["Mercury", .24]
   mercuryAge(){
+    const birthdayAge = this.birthdayAge;
+    return birthdayAge * .24;
+  }
 
+  //     ["Venus", .62]
+  venusAge(){
+    
   }
 }
 
