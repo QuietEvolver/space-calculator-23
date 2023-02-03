@@ -39,8 +39,8 @@ export default class Calculator{
     this.birthdayAge = birthdayAge;
   }
 
-  givenAge(){
-    
+  givenAgeValidation(){
+
   }
 
 }
