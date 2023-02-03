@@ -27,16 +27,18 @@ export default class Calculator{
     this.birthdayAge = birthdayAge;
   }
 
-  // givenAgeValidation(){// if (this.birthdayAge === 0)
-  //   if(this.birthdayAge !== 0) {
-  //     this.birthdayAge;//this.birthdayAge
+  givenAgeValidation(){//if(this.birthdayAge !== 0)  
+    // if (this.birthdayAge === undefined){
+    //   this.birthdayAge = 0;//this.birthdayAge
+    if(this.birthdayAge !== 0){
+        this.birthdayAge;//this.birthdayAge
   //   } else return 0;
   //   // if (isNaN(this.birthdayAge))
   //   // {
   //   //   this.birthdayAge = NaN;
   //   //   return this.birthdayAge;
-  //   // }
-  // }
+    }
+  }
 
   //     ["Mercury", .24]
   mercuryAge(){
@@ -67,22 +69,22 @@ export default class Calculator{
   // Map.
 
 
-  getYearsSinceBirthdayAge(planetName){
-    let birthdayAge = this.birthdayAge;
-    const iCalculator = new Map(
-    [
-      ["Earth", 1],
-      ["Mercury", .24],
-      ["Venus", .62],
-      ["Mars", 1.88], 
-      ["Jupiter", 11.86]
-    ]
-  );
-  if(birthdayAge > 0){
-    return Number(birthdayAge - iCalculator.entries(planetName));
-  }
-  // iCalculator.entries()
-  }
+  // getYearsSinceBirthdayAge(planetName){
+  //   let birthdayAge = this.birthdayAge;
+  //   const iCalculator = new Map(
+  //   [
+  //     ["Earth", 1],
+  //     ["Mercury", .24],
+  //     ["Venus", .62],
+  //     ["Mars", 1.88], 
+  //     ["Jupiter", 11.86]
+  //   ]
+  // );
+  // if(birthdayAge > 0){
+  //   return Number(birthdayAge - iCalculator.entries(planetName));
+  // }
+  // // iCalculator.entries()
+  // }
 }
 
 // //Years
