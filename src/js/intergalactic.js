@@ -35,10 +35,13 @@ Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)*/
 // iCalculator.entries()
 
 export default class Calculator{
-  constructor ( birthDay) {
-    this.birthDay = birthDay;
+  constructor ( birthdayAge) {
+    this.birthdayAge = birthdayAge;
   }
 
+  givenAge(){
+    
+  }
 
 }
 //Years
