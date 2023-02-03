@@ -1,6 +1,9 @@
 import Calculator from "../src/js/intergalactic";
 
 describe('Calculator', () => {
-  const calculator =  new Calculator("1931-05-13");
-  expect(birthDay).toEqual(92);
+  
+  test('Should return an age given an inputted age', () => {
+    const calculator =  new Calculator(92);
+    expect(calculator.birthdayAge).toEqual(92);
+  });
 });
