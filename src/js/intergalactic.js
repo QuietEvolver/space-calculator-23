@@ -40,11 +40,11 @@ export default class Calculator{
   }
 
   givenAgeValidation(){
-    if(this.birthdayAge !== 0) {
+    if(this.birthdayAge !== undefined) {
       return this.birthdayAge;
-    } else // if (this.birthdayAge === 0)
-     {
-      return this.birthdayAge;
+    // } else // if (this.birthdayAge === 0)
+    //  {
+    //   return this.birthdayAge;
     }
   }
 
