@@ -23,5 +23,9 @@ describe('Calculator', () => {
       expect(calculator.mercuryAge()).toEqual(0.96);
     });
   
+    test('Should test Mercury age given an inputted age', () => {
+      const calculator =  new Calculator(4);
+      expect(calculator.venusAge()).toEqual(6.4516129032);
+    });
   
 });
