@@ -67,6 +67,11 @@ export default class Calculator{
     const birthdayAge = this.birthdayAge;
     return birthdayAge * 1.88;
   }
+
+  //     ["Jupiter", 11.86]
+  jupiterAge(){
+  }
+
 }
 
 // //Years
