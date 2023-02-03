@@ -70,6 +70,8 @@ export default class Calculator{
 
   //     ["Jupiter", 11.86]
   jupiterAge(){
+    const birthdayAge = this.birthdayAge;
+    return birthdayAge * 11.86;
   }
 
 }
