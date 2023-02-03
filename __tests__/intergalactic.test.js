@@ -39,7 +39,7 @@ describe('Calculator', () => {
     });
 
     test('Should test one age to the next age given an inputted age', () => {
-      const calculator =  new Calculator(56);
+      const calculator =  new Calculator("Mercury");
       expect(calculator.getYearsSinceBirthdayAge()).toEqual(43);
     });
 });
