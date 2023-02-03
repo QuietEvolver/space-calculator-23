@@ -1,0 +1,21 @@
+import { placements } from "@popperjs/core"
+
+i want a calculator that 
+
+- evaluates each planets' years
+FROM MY BIRTHDAY
+- how many years since my birthday
+
+56 to 43 years old toEqual 13 Earth years.
+
+- how many years to next my birthday
+
+56 to 61 years old toEqual 5 Earth years.
+
+THE CODE: 
+
+iterable to access each planet in {}/[].value
+
+- count up to bday fxn
+- count down from one bday to next bday on given P's
+
