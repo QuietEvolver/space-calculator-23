@@ -38,4 +38,8 @@ export default class Calculator{
   constructor ( birthDay) {
     this.birthDay = birthDay;
   }
+
+
 }
+
+export const mercuryDaysInYear = .24;
