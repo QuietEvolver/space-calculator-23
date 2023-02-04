@@ -69,7 +69,7 @@ export default class Calculator{
   // Map.
 
 
-  // getYearsSinceBirthdayAge(planetName){
+  getYearsSinceBirthdayAge(){//planetName
   //   let birthdayAge = this.birthdayAge;
   //   const iCalculator = new Map(
   //   [
@@ -84,7 +84,7 @@ export default class Calculator{
   //   return Number(birthdayAge - iCalculator.entries(planetName));
   // }
   // // iCalculator.entries()
-  // }
+  }
 }
 
 // //Years
