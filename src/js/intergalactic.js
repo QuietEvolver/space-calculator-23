@@ -32,11 +32,11 @@ export default class Calculator{
     //   this.birthdayAge = 0;//this.birthdayAge
     if(this.birthdayAge !== 0){
         return this.birthdayAge;//this.birthdayAge
-  //   } else return 0;
-  //   // if (isNaN(this.birthdayAge))
-  //   // {
-  //   //   this.birthdayAge = NaN;
-  //   //   return this.birthdayAge;
+    // } else return 0;
+    }
+    if (isNaN(this.birthdayAge))
+    {
+
     }
   }
 
