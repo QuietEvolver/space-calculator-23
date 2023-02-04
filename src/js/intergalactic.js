@@ -28,16 +28,13 @@ export default class Calculator{
   }
 
   givenAgeValidation(){//if(this.birthdayAge !== 0)  
-    // if (this.birthdayAge === undefined){
-    //   this.birthdayAge = 0;//this.birthdayAge
-    if(this.birthdayAge !== 0){
-        return this.birthdayAge;//this.birthdayAge
-    // } else return 0;
+    if (this.birthdayAge === undefined){
+      return this.birthdayAge = 0;
     }
-    if (isNaN(this.birthdayAge))
-    {
-
-    }
+    // if (isNaN(this.birthdayAge))
+    // {
+    //   return NaN;
+    // }
   }
 
   //     ["Mercury", .24]
