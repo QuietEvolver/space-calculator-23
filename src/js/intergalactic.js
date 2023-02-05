@@ -69,6 +69,7 @@ export default class Calculator{
 
   getYearsSinceBirthdayAge(planetName){//planetName
     let birthdayAge = this.birthdayAge;
+    console.log(this.birthdayAge);
     const iCalculator = new Map(
     [
       ["Earth", 1],
@@ -79,8 +80,7 @@ export default class Calculator{
     ]
   );
   if(birthdayAge > 0){
-    let age = Number(birthdayAge - iCalculator.entries(planetName))
-    return age;
+    return Number(birthdayAge - iCalculator.entries(planetName));
   }
   // // iCalculator.entries()
   }
