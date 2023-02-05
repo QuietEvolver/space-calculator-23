@@ -43,9 +43,9 @@ describe('Calculator', () => {
     const calculator =  new Calculator(4);
     expect(calculator.jupiterAge()).toEqual(47.44);
   });
-//undef
-    // test('Should test one age to the next age given an inputted age', () => {
-    //   const calculator =  new Calculator("Mercury");
-    //   expect(calculator.getYearsSinceBirthdayAge()).toEqual(43);
-    // });
+//undef//43
+    test('Should test one age to the next age given an inputted age', () => {
+      const calculator =  new Calculator("Earth", "Mercury", "Venus", "Mars", "Jupiter");
+      expect(calculator.getYearsSinceBirthdayAge()).toEqual(4, .96, 2.48, 7.52, 47.44);
+    });
 });
