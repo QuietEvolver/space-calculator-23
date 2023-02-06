@@ -1,6 +1,7 @@
 export default class Calculator{
-  constructor ( birthdayAge) {
+  constructor ( birthdayAge, planet) {
     this.birthdayAge = birthdayAge;
+    this.planet = planet;
   }
 
   givenAgeValidation(){ 
