@@ -1,5 +1,13 @@
 
-/* ### 2 ##### Determines how many years have passed on each planet since a past birthday. For example, if a user is 56 and we want to calculate how many years have passed since their 43 birthday, we would find the following results:
+/* ### 1 #######
+BI takes a person's age in years and create a class that does the following:
+
+Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
+Returns their age in Venus years. (A Venus year is .62 Earth years.)
+Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
+Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+
+### 2 ##### Determines how many years have passed on each planet since a past birthday. For example, if a user is 56 and we want to calculate how many years have passed since their 43 birthday, we would find the following results:
 13 Earth years have passed.
 54.16 Mercury years have passed.
 8.06 Venus years have passed.
@@ -20,23 +28,17 @@ export default class Calculator{
   }
 
   givenAgeValidation(){//if(this.birthdayAge !== 0)  
-    if (this.birthdayAge === undefined){
-      return this.birthdayAge = 0;
-    }
-    // if(this.birthdayAge !== 0){
-    //   return this.birthdayAge;
+    // if (this.birthdayAge === undefined){
+    //   return this.birthdayAge = 0;
     // }
+    if(this.birthdayAge !== 0){
+      return this.birthdayAge;
+    }
     // if (isNaN(this.birthdayAge))
     // {
     //   return NaN;
     // }
   }
-
-  // givenAgeUndefined(){
-  //   // if (this.birthdayAge === undefined){
-  //   //   return this.birthdayAge = 0;
-  //   }
-  // }
 
   //     ["Mercury", .24]
   mercuryAge(){
@@ -67,40 +69,22 @@ export default class Calculator{
   // Map.
 
 
-  getYearsSinceBirthdayAge(planetName){//planetName
-    let birthdayAge = this.birthdayAge;
-    console.log(this.birthdayAge);
-    const iCalculator = new Map(
-    [
-      ["Earth", 1],
-      ["Mercury", .24],
-      ["Venus", .62],
-      ["Mars", 1.88], 
-      ["Jupiter", 11.86]
-    ]
-  );
-  if(birthdayAge > 0){
-    return Number(birthdayAge - iCalculator.entries(planetName));
-  }
+  getYearsSinceBirthdayAge(){//planetName
+  //   let birthdayAge = this.birthdayAge;
+  //   const iCalculator = new Map(
+  //   [
+  //     ["Earth", 1],
+  //     ["Mercury", .24],
+  //     ["Venus", .62],
+  //     ["Mars", 1.88], 
+  //     ["Jupiter", 11.86]
+  //   ]
+  // );
+  // if(birthdayAge > 0){
+  //   return Number(birthdayAge - iCalculator.entries(planetName));
+  // }
   // // iCalculator.entries()
   }
-  
-    // getYearsToFutureBirthdayAge(planetName){//planetName
-    //   let birthdayAge = this.birthdayAge;
-    //   const iCalculator = new Map(
-    //   [
-    //     ["Earth", 1],
-    //     ["Mercury", .24],
-    //     ["Venus", .62],
-    //     ["Mars", 1.88], 
-    //     ["Jupiter", 11.86]
-    //   ]
-    // );
-    // if(birthdayAge > 0){
-    //   let age = Number(birthdayAge - iCalculator.entries(planetName))
-    //   return age;
-    // }
-  // }
 }
 
 // //Years
@@ -115,30 +99,3 @@ export default class Calculator{
 // export const marsDaysInYear = 320;
 // export const jupiterDaysInYear = 4332.59;
 // export const earthDaysInYear = 365.25;
-
-/*
-let value = this.size; 
-  for (const [key, value] of data) {
-    if (key === "size") {
-      size = value;
-    }
-    // let msg = "Choose an option";
-    switch(size){
-      case("Earth"): 
-        this.size = "small";
-        sizePrice = 5;
-        return sizePrice;
-      case("medium"): 
-        this.size = "medium";
-        sizePrice = 10;
-        return sizePrice;
-      case("large"):
-        this.size = "large";
-        sizePrice = 15;
-        return sizePrice;
-      default: 
-      console.log("Choose a sz");
-      // output.innerHTML = msg;  // webAPI: MessageChannel; 
-    }
-  }
-  */
