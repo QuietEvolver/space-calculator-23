@@ -42,6 +42,13 @@ describe('Calculator', () => {
     //   const calculator =  new Calculator("Earth", "Mercury", "Venus", "Mars", "Jupiter");
     //   expect(calculator.getYearsSinceBirthdayAge()).toEqual(4, .96, 2.48, 7.52, 47.44);
     // });
+        
+    test('Should test: Lee', () => {
+      const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
+     // console.log('calculator', calculator);
+
+      // expect(calculator.getYearsSinceBirthdayAge()).toEqual(59.3, "jupiter");
+    });
     
     // test('Should test entry of each given parameter looped', () => {
     //   const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
