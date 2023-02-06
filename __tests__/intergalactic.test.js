@@ -12,10 +12,11 @@ describe('Calculator', () => {
   //   expect(calculator.givenAgeValidation()).toEqual(0);
   // }); 
 
-  // test('Should test validation of an age given an inputted age is not an integer', () => {
-  // const calculator =  new Calculator(0);
-  // expect(calculator.givenAgeValidation()).toEqual(0);
-  // });
+  test('Should test validation of an age is not equal to zero', () => {
+  const calculator =  new Calculator();
+  expect(calculator.givenAgeValidation()).toEqual(0);
+  expect(calculator.birthdayAge).toEqual(0);
+  });
 
   // test('Should test validation of an age given an inputted age is not an integer', () => {
   //   const calculator =  new Calculator(0);
