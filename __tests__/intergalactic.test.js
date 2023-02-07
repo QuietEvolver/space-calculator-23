@@ -7,6 +7,12 @@ describe('Calculator', () => {
     expect(calculator.birthdayAge).toEqual(92);
   });
 
+  test('Should account for validation of an NaN an inputted age', () => {
+    const calculator = new Calculator();
+    calculator.givenAgeValidation();
+    expect(calculator.birthdayAge).toEqual(0);
+  }); 
+
   test('Should account for validation of an undefined an inputted age', () => {
     const calculator = new Calculator(undefined);
     expect(calculator.givenAgeValidation()).toEqual(0);
@@ -43,16 +49,22 @@ describe('Calculator', () => {
     //   expect(calculator.getYearsSinceBirthdayAge()).toEqual(4, .96, 2.48, 7.52, 47.44);
     // });
         
-    test('Should test: Lee', () => {
-      const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
-     // console.log('calculator', calculator);
+    // test('Should test: Loop at each planet(s)', () => {
+    //   const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
+    //   console.log('calculator', calculator.getYearsSinceBirthdayAge());
 
-      // expect(calculator.getYearsSinceBirthdayAge()).toEqual(59.3, "jupiter");
-    });
+    //   // expect(calculator.getYearsSinceBirthdayAge()).toEqual(59.3, "jupiter");
+    // });
     
     // test('Should test entry of each given parameter looped', () => {
-    //   const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
+    //   const calculator =  new Calculator();
+    //   //5,  [ "earth", "mercury", "venus", "mars", "jupiter"] 
     //   console.log('calculator', calculator);
-    // // expect(calculator.getYearsSinceBirthdayAge()).toEqual(59.3, "jupiter");
+    //   calculator.getYearsSinceBirthdayAge();
+    //   expect(planetAge).toEqual([5,"earth"], 
+    //     [ 1.2,"mercury",
+    //      3.1,"venus",
+    //      9.399999999999999,"mars" ,
+    //      59.3,"jupiter"]);
     // });
 });
