@@ -5,7 +5,9 @@ export default class Calculator{
   }
 
   givenAgeValidation(){ 
-    if((isNaN(this.birthdayAge) || this.birthdayAge < 0 || undefined)){
+    /* istanbul ignore else */// 
+    if(this.birthdayAge === NaN ||this.birthdayAge < 0 || this.birthdayAge === undefined){
+      console.log("Nan", (isNaN(this.birthdayAge)) )
       this.birthdayAge = 0;
       return this.birthdayAge; 
     } 
@@ -31,49 +33,31 @@ export default class Calculator{
     return birthdayAge * 11.86;
   }
 
-
-  // for each planet in plantes, do this. 
-  // Map.
-
-  getYearsSinceBirthdayAge(){//planetName
-    //   let birthdayAge = this.birthdayAge;
-    //   let planets = this.planets;
-
-    
-    //   const iCalculator = new Map(
-    //   [
-    //     ["Earth", 1],
-    //     ["Mercury", .24],
-    //     ["Venus", .62],
-    //     ["Mars", 1.88], 
-    //     ["Jupiter", 11.86]
-    //   ]
-    // );
-    // if(birthdayAge > 0){
-    //   return Number(birthdayAge - iCalculator.entries(planetName));
-    // }
-    // // iCalculator.entries()
+  getYearsSinceBirthdayAge(){
+      // let birthdayAge = this.birthdayAge;
+      // let planets = this.planets;
+      // // let earthAge = 1
+      // // let mercuryAge = earthAge / .24
   
-      console.log('planets', planets);
-      console.log('this.planets', this.planets);
-      let returnedPlanets = {}
+      // console.log('planets', planets);
+      // console.log('this.planets', this.planets);
+      // let returnedPlanets = {}
   
-      let planetAge = {
-        earth: birthdayAge,
-        mercury: birthdayAge *.24,
-        venus: birthdayAge * .62,
-        mars: birthdayAge * 1.88,
-        jupiter: birthdayAge * 11.86
-      }
-      console.log('evaluated planetAge', planetAge)
-      // console.log('planet:', planet, 'age:', planetAge[planet])
+      // let planetAge = {
+      //   earth: birthdayAge,
+      //   mercury: birthdayAge *.24,
+      //   venus: birthdayAge * .62,
+      //   mars: birthdayAge * 1.88,
+      //   jupiter: birthdayAge * 11.86
+      // }
+      // console.log('evaluated planetAge', planetAge)
+      // console.log('planet:', planet, 'birthdayAge:', planetAge[planet])
   
-      let planetsAgeArr = planets.forEach(planet => {
-        returnedPlanets = {...returnedPlanets, [planet]: planetAge[planet]}
-      })
-      console.log('returnedPlanets', returnedPlanets);
+      // let planetsAgeArr = planets.forEach(planet => {
+      //   returnedPlanets = {...returnedPlanets, [planet]: planetAge[planet]}
+      // })
+      // console.log('returnedPlanets', returnedPlanets);
   
-      return planetsAgeArr;
-
+      // return planetsAgeArr;
   }
 }
