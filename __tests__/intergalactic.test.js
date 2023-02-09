@@ -17,6 +17,12 @@ describe('Calculator', () => {
     const calculator = new Calculator(undefined);
     expect(calculator.givenAgeValidation()).toEqual(0);
   }); 
+  
+  test('Should test validation of an age is not equal to zero', () => {
+  const calculator =  new Calculator();
+  expect(calculator.givenAgeValidation()).toEqual(0);
+  expect(calculator.birthdayAge).toEqual(0);
+  });
 
   test('Should test Mercury age given an inputted age', () => {
     const calculator =  new Calculator(4);
