@@ -60,7 +60,15 @@ export default class Calculator{
     return yearsPassedObj;
   }
 
-  yearsFuture(futureBdayAgeEntered) {
-
+  yearsInFuture(futureBdayAgeEntered) {
+    let yearsInFuture = futureBdayAgeEntered - this.birthdayAge;
+    let yearsFutureObj = {
+      earth: yearsInFuture,
+      mercury: yearsInFuture *.24,
+      venus: yearsInFuture * .62,
+      mars: yearsInFuture * 1.88,
+      jupiter: yearsInFuture * 11.86
+    }
+    return yearsFutureObj;  
   }
 }
