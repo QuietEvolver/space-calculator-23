@@ -104,34 +104,17 @@ export default class Calculator{
 
   }
 }
-//   givenAgeValidation(){//if(this.birthdayAge !== 0)  
+//   givenAgeValidation(){
 //     let birthdayAge = this.birthdayAge;
 //     // console.log('birthdayAge', birthdayAge);
 //     if (birthdayAge == undefined){
 //       console.log("birthdayAge: ", birthdayAge);
 //       birthdayAge = 0;
 //       console.log('birthdayAge', birthdayAge);
-      
+//      }      
 //     }
 //     // if(this.birthdayAge !== 0){
-//     //   return this.birthdayAge;
-//     // }
-//     // if (isNaN(this.birthdayAge))
-//     // {
-//     //   return NaN;
-//     // } 
-//     // else{ 
-//     //   // console.log('birthdayAge', this.birthdayAge);
-//     //   birthdayAge = this.birthdayAge;
-//     // }
-//     return birthdayAge;
-//   }
-
-//   // givenAgeUndefined(){
-//   //   // if (this.birthdayAge === undefined){
-//   //   //   return this.birthdayAge = 0;
-//   //   }
-//   // }
+//
 
 //   PlanetCalc (birthdayAge, planet) {
 //     if (planet === 'earth') {

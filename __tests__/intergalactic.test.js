@@ -62,9 +62,14 @@ describe('Calculator', () => {
     //   console.log('calculator', calculator);
     //   calculator.getYearsSinceBirthdayAge();
     //   expect(planetAge).toEqual([5,"earth"], 
-    //     [ 1.2,"mercury",
-    //      3.1,"venus",
-    //      9.399999999999999,"mars" ,
-    //      59.3,"jupiter"]);
+    //     [ 1.2,"mercury", 3.1,"venus", 9.399999999999999,"mars", 59.3,"jupiter"]);
     // });
+
+    test('Should test entry of each given parameter looped', () => {
+      const calculator =  new Calculator();
+      //5,  [ "earth", "mercury", "venus", "mars", "jupiter"] 
+      console.log('calculator', calculator);
+      calculator.getYearsSinceBirthdayAge();
+      expect(planetAge).toEqual([5,"earth"]);
+    });
 });

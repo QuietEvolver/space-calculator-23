@@ -34,30 +34,34 @@ export default class Calculator{
   }
 
   getYearsSinceBirthdayAge(){
-      // let birthdayAge = this.birthdayAge;
-      // let planets = this.planets;
+      let birthdayAge = this.birthdayAge;
+      let planets = this.planets;
       // // let earthAge = 1
       // // let mercuryAge = earthAge / .24
   
       // console.log('planets', planets);
       // console.log('this.planets', this.planets);
-      // let returnedPlanets = {}
+      let returnedPlanets = {}
   
-      // let planetAge = {
-      //   earth: birthdayAge,
-      //   mercury: birthdayAge *.24,
-      //   venus: birthdayAge * .62,
-      //   mars: birthdayAge * 1.88,
-      //   jupiter: birthdayAge * 11.86
-      // }
+      let planetAge = {
+        earth: birthdayAge * 1,
+        mercury: birthdayAge *.24,
+        venus: birthdayAge * .62,
+        mars: birthdayAge * 1.88,
+        jupiter: birthdayAge * 11.86
+      }
       // console.log('evaluated planetAge', planetAge)
       // console.log('planet:', planet, 'birthdayAge:', planetAge[planet])
   
-      // let planetsAgeArr = planets.forEach(planet => {
-      //   returnedPlanets = {...returnedPlanets, [planet]: planetAge[planet]}
-      // })
-      // console.log('returnedPlanets', returnedPlanets);
+      let planetsAgeArr = planets.forEach(planet => {
+        returnedPlanets = {...returnedPlanets, [planet]: planetAge[planet]};
+
+      console.log('returnedPlanets', returnedPlanets);
+      });
+      console.log('returnedPlanets', returnedPlanets);
   
-      // return planetsAgeArr;
+      // let this.birthdayAge - pastAge/planet.
+      // let futureAge-this.birthdayAge/planet.
+      return planetsAgeArr;
   }
 }
