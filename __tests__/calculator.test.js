@@ -62,4 +62,16 @@ describe('Calculator', () => {
     let yearsUntilAgeTest = calculator.yearsUntil(2);
     expect(yearsUntilAgeTest.jupiter).toEqual(35.58);
   });
+
+  test('Should test: how many years has until X birthday', () => {
+    const calculator = new Calculator(5);
+    let yearsFutureTest = calculator.yearsFuture(7);
+    expect(yearsFutureTest.earth).toEqual(2);
+  });
+
+  test('Should test: how many years until X birthday', () => {
+    const calculator = new Calculator(5);
+    let yearsInFutureTest = calculator.yearsInFuture(7);
+    expect(yearsInFutureTest.earth).toEqual(2);
+  });
 });
