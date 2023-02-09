@@ -51,9 +51,15 @@ describe('Calculator', () => {
   //   expect(testAge.jupiter).toEqual(59.3);
   // });
 
-  test('Should test how many years has passed since X birthday', () => {
+  test('Should test how many years has passed since X birthday on Earth', () => {
     const calculator = new Calculator(5);
     let yearsUntilAgeTest = calculator.yearsUntil(2);
     expect(yearsUntilAgeTest.earth).toEqual(3);
+  });
+
+  test('Should test: how many years has passed since X birthday on Jupiter', () => {
+    const calculator = new Calculator(5);
+    let yearsUntilAgeTest = calculator.yearsUntil(2);
+    expect(yearsUntilAgeTest.jupiter).toEqual(35.58);
   });
 });

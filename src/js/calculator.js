@@ -1,5 +1,5 @@
 export default class Calculator{
-  constructor ( birthdayAge, getYearsSinceBirthdayAge) {
+  constructor ( birthdayAge) {
     this.birthdayAge = birthdayAge;
   }
 
