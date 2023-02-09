@@ -65,8 +65,8 @@ describe('Calculator', () => {
 
   test('Should test: how many years has until X birthday', () => {
     const calculator = new Calculator(5);
-    let yearsFutureTest = calculator.yearsFuture(7);
-    expect(yearsFutureTest.earth).toEqual(2);
+    let yearsInFutureTest = calculator.yearsFuture(7);
+    expect(yearsInFutureTest.earth).toEqual(2);
   });
 
   test('Should test: how many years until X birthday', () => {
