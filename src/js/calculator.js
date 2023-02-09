@@ -10,16 +10,8 @@ export default class Calculator{
       return this.birthdayAge; 
     } 
   }
- // Calvin: trying to get it all in one fxn.
-  // earthAge(){
-  //   PASSED: let yearsPassedSinceBdayAge = this.birthdayAge - pastBdayAgeEntered;
-  //   this.yearsSince = yearsPassedSinceBdayAge;
-  //   const birthdayAge = this.birthdayAge;
-  //   return birthdayAge = this.birthdayAge;
-  // }
-
+  
   mercuryAge(){
-    // Calvin: I know this is awkward but it's the only way the test would pass.
     const birthdayAge = this.birthdayAge;
     return birthdayAge * .24;
   }
@@ -55,4 +47,7 @@ export default class Calculator{
 
 //       return planetAge;
 //   }
+
+  yearsUntil(pastBdayAgeEntered) {
+  }
 }
