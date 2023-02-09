@@ -7,11 +7,11 @@ describe('Calculator', () => {
     expect(calculator.birthdayAge).toEqual(92);
   });
 
-  // test('Should account for validation of an NaN an inputted age', () => {
-  //   const calculator = new Calculator();
-  //   calculator.givenAgeValidation();
-  //   expect(calculator.birthdayAge).toEqual(0);
-  // }); 
+  test('Should account for validation of an NaN an inputted age', () => {
+    const calculator = new Calculator();
+    calculator.givenAgeValidation();
+    expect(calculator.birthdayAge).toEqual(0);
+  }); 
 
   // test('Should account for validation of an undefined an inputted age', () => {
   //   const calculator = new Calculator(undefined);
@@ -23,6 +23,20 @@ describe('Calculator', () => {
   // expect(calculator.givenAgeValidation()).toEqual(0);
   // expect(calculator.birthdayAge).toEqual(0);
   // });
+
+  // test('should create an earth age', () => {
+  //   const calculator =  new Calculator(5);
+  //   expect(calculator.birthdayAge).toEqual(15);
+  // });
+
+  // test('should correctly say how many Earth years have passed since last birthday', () => {
+  //   calculator.earthAge(12);
+  //   expect(calculator.yearsSince).toEqual(15);
+  // })
+  // test('should correctly say how many Earth years until a persons future birthday', () => {
+  //   calculator.earthAge(5);
+  //   expect(calculator.yearsUntil).toEqual(13)
+  // })
 
   test('Should test Mercury age given an inputted age', () => {
     const calculator =  new Calculator(4);
@@ -44,14 +58,10 @@ describe('Calculator', () => {
     expect(calculator.jupiterAge()).toEqual(47.44);
   });
 ////43
-    // test('Should test one age to the next age given an inputted age', () => {
-    //   const calculator =  new Calculator("Earth", "Mercury", "Venus", "Mars", "Jupiter");
-    //   expect(calculator.getYearsSinceBirthdayAge()).toEqual(4, .96, 2.48, 7.52, 47.44);
-    // });
-    
-    // test('Should test: Lee', () => {
-    //   const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
-    //   console.log('calculator', calculator);
-    // // expect(calculator.getYearsSinceBirthdayAge()).toEqual(59.3, "jupiter");
-    // });
+  // test('Should test: all planets', () => {
+  //   const calculator =  new Calculator(5, [ "earth", "mercury", "venus", "mars", "jupiter" ]);
+  //   console.debug('calculator', calculator);
+  //   let testAge = calculator.getYearsSinceBirthdayAge(5);
+  //   expect(testAge.jupiter).toEqual(59.3);
+  // });
 });
