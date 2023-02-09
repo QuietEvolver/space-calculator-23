@@ -49,5 +49,14 @@ export default class Calculator{
 //   }
 
   yearsUntil(pastBdayAgeEntered) {
+    let yearsPassed = this.birthdayAge - pastBdayAgeEntered;
+    let yearsPassedObj = {
+      earth: yearsPassed,
+      mercury: yearsPassed *.24,
+      venus: yearsPassed * .62,
+      mars: yearsPassed * 1.88,
+      jupiter: yearsPassed * 11.86
+  }
+    return yearsPassedObj;
   }
 }
