@@ -1,15 +1,16 @@
 export default class Calculator{
-  constructor ( birthdayAge, planet) {
+  constructor ( birthdayAge, planet, pastBday, futurebday) {
     this.birthdayAge = birthdayAge;
     this.planet = planet;
   }
 
-  givenAgeValidation(){
-    if(this.birthdayAge === NaN || this.birthdayAge < 0 || this.birthdayAge === undefined){
-      this.birthdayAge = 0;
-      return this.birthdayAge; 
-    } 
-  }
+  // givenAgeValidation(){
+  //   // [istanbul]
+  //   if(this.birthdayAge === NaN || this.birthdayAge < 0 || this.birthdayAge === undefined){
+  //     this.birthdayAge = 0;
+  //     return this.birthdayAge; 
+  //   } 
+  // }
 
   mercuryAge(){
     const birthdayAge = this.birthdayAge;
