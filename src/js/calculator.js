@@ -12,23 +12,19 @@ export default class Calculator{
   }
   
   mercuryAge(){
-    const birthdayAge = this.birthdayAge;
-    return birthdayAge * .24;
+    return this.birthdayAge * .24;
   }
 
   venusAge(){
-    const birthdayAge = this.birthdayAge;
-    return birthdayAge * .62;
+    return this.birthdayAge * .62;
   }
 
   marsAge(){
-    const birthdayAge = this.birthdayAge;
-    return birthdayAge * 1.88;
+    return this.birthdayAge * 1.88;
   }
 
   jupiterAge(){
-    const birthdayAge = this.birthdayAge;
-    return birthdayAge * 11.86;
+    return this.birthdayAge * 11.86;
   }
 
 //   getYearsSinceBirthdayAge(birthdayAge) {
