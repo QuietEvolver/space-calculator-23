@@ -4,6 +4,11 @@ export default class Calculator{
   }
 
   givenAgeValidation(){
+    if(this.birthdayAge === NaN ||this.birthdayAge < 0 ){
+      console.log("Nan", (isNaN(this.birthdayAge)) )
+      this.birthdayAge = 0;
+      return this.birthdayAge; 
+    } 
   }
 
   //     ["Mercury", .24]
