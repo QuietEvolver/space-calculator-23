@@ -50,4 +50,10 @@ describe('Calculator', () => {
   //   let testAge = calculator.getYearsSinceBirthdayAge(5);
   //   expect(testAge.jupiter).toEqual(59.3);
   // });
+
+  test('Should test how many years has passed since X birthday', () => {
+    const calculator = new Calculator(5);
+    let yearsUntilAgeTest = calculator.yearsUntil(2);
+    expect(yearsUntilAgeTest.earth).toEqual(3);
+  });
 });
