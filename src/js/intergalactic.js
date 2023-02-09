@@ -4,8 +4,7 @@ export default class Calculator{
   }
 
   givenAgeValidation(){
-    if(this.birthdayAge === NaN || this.birthdayAge < 0  ||this.birthdayAge === undefined){
-      console.log("Nan", (isNaN(this.birthdayAge)) )
+    if(this.birthdayAge === NaN || this.birthdayAge < 0 || this.birthdayAge === undefined){
       this.birthdayAge = 0;
       return this.birthdayAge; 
     } 
