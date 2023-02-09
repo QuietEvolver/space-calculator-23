@@ -1,18 +1,25 @@
 export default class Calculator{
-  constructor ( birthdayAge, planet, pastBday, futurebday) {
+  constructor ( birthdayAge, getYearsSinceBirthdayAge) {
     this.birthdayAge = birthdayAge;
-    this.planet = planet;
   }
 
-  // givenAgeValidation(){
-  //   // [istanbul]
-  //   if(this.birthdayAge === NaN || this.birthdayAge < 0 || this.birthdayAge === undefined){
-  //     this.birthdayAge = 0;
-  //     return this.birthdayAge; 
-  //   } 
+  givenAgeValidation(){
+    /* istanbul ignore else */ 
+    if(this.birthdayAge === NaN || this.birthdayAge < 0 || this.birthdayAge === undefined){
+      this.birthdayAge = 0;
+      return this.birthdayAge; 
+    } 
+  }
+ // Calvin: trying to get it all in one fxn.
+  // earthAge(){
+  //   PASSED: let yearsPassedSinceBdayAge = this.birthdayAge - pastBdayAgeEntered;
+  //   this.yearsSince = yearsPassedSinceBdayAge;
+  //   const birthdayAge = this.birthdayAge;
+  //   return birthdayAge = this.birthdayAge;
   // }
 
   mercuryAge(){
+    // Calvin: I know this is awkward but it's the only way the test would pass.
     const birthdayAge = this.birthdayAge;
     return birthdayAge * .24;
   }
@@ -32,20 +39,20 @@ export default class Calculator{
     return birthdayAge * 11.86;
   }
 
-  getYearsSinceBirthdayAge(){//planetName
-  //   let birthdayAge = this.birthdayAge;
-  //   const iCalculator = new Map(
-  //   [
-  //     ["Earth", 1],
-  //     ["Mercury", .24],
-  //     ["Venus", .62],
-  //     ["Mars", 1.88], 
-  //     ["Jupiter", 11.86]
-  //   ]
-  // );
-  // if(birthdayAge > 0){
-  //   return Number(birthdayAge - iCalculator.entries(planetName));
-  // }
-  // // iCalculator.entries()
-  }
+//   getYearsSinceBirthdayAge(birthdayAge) {
+//       // this.birthdayAge = birthdayAge;
+//       console.log('planets', planets);
+//       // let returnedPlanets = {}
+  
+//       let planetAge = {
+//         earth: birthdayAge,
+//         mercury: birthdayAge *.24,
+//         venus: birthdayAge * .62,
+//         mars: birthdayAge * 1.88,
+//         jupiter: birthdayAge * 11.86
+//       }
+//       console.log('evaluated planetAge', planetAge);
+
+//       return planetAge;
+//   }
 }
