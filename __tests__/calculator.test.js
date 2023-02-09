@@ -13,10 +13,10 @@ describe('Calculator', () => {
     expect(calculator.birthdayAge).toEqual(0);
   }); 
 
-  // test('Should account for validation of an undefined an inputted age', () => {
-  //   const calculator = new Calculator(undefined);
-  //   expect(calculator.givenAgeValidation()).toEqual(0);
-  // }); 
+  test('Should account for validation of an undefined an inputted age', () => {
+    const calculator = new Calculator(undefined);
+    expect(calculator.givenAgeValidation()).toEqual(0);
+  }); 
   
   // test('Should test validation of an age is not equal to zero', () => {
   // const calculator =  new Calculator();
