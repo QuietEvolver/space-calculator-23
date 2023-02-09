@@ -59,4 +59,8 @@ export default class Calculator{
   }
     return yearsPassedObj;
   }
+
+  yearsFuture(futureBdayAgeEntered) {
+
+  }
 }
