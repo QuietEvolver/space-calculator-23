@@ -5,7 +5,7 @@ export default class Calculator{
 
   givenAgeValidation(){
     /* istanbul ignore else */ 
-    if(this.birthdayAge === NaN){
+    if(this.birthdayAge === NaN  || this.birthdayAge < 0){
       this.birthdayAge = 0;
       return this.birthdayAge; 
     } 
